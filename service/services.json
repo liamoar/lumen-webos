@@ -1,0 +1,7 @@
+{
+  "id": "com.avinash.lumen.service",
+  "description": "Lumen background service",
+  "services": [
+    { "name": "com.avinash.lumen.service", "description": "Default-home watcher" }
+  ]
+}

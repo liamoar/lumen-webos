@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=1920, height=1080">
+  <title>Lumen</title>
+  <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+  <div id="stage">
+    <div class="wall" id="wall"></div>
+    <div class="wall-dim"></div>
+    <div class="glow" id="glow"></div>
+
+    <div id="home">
+      <header class="topbar">
+        <div class="clock">
+          <div class="clock-time"><span id="time">--:--</span><span class="clock-ampm" id="ampm"></span></div>
+          <div class="clock-date" id="date"></div>
+          <div class="greeting" id="greeting"></div>
+        </div>
+        <div class="top-right">
+          <div class="weather" id="weather" hidden>
+            <span class="weather-icon" id="weather-icon"></span>
+            <span class="weather-temp" id="weather-temp"></span>
+            <span class="weather-cond" id="weather-cond"></span>
+          </div>
+          <div class="top-buttons" id="top-buttons"></div>
+        </div>
+      </header>
+
+      <section class="hero" id="hero">
+        <div class="hero-kicker" id="hero-kicker"></div>
+        <h1 class="hero-title" id="hero-title"></h1>
+        <div class="hero-sub" id="hero-sub"></div>
+      </section>
+
+      <main class="viewport">
+        <div class="content" id="content"></div>
+      </main>
+    </div>
+
+    <div class="photo-credit" id="photo-credit"></div>
+    <footer class="hints" id="hints"></footer>
+
+    <!-- Customize -->
+    <aside class="panel" id="panel">
+      <div class="panel-kicker">Appearance</div>
+      <div class="panel-title">Make it yours</div>
+      <div class="scroller"><div class="panel-list" id="panel-list"></div></div>
+    </aside>
+
+    <!-- Edit welcome name (focusing the field opens the TV's on-screen keyboard) -->
+    <div class="overlay sheet" id="name-sheet">
+      <div class="sheet-card">
+        <div class="panel-kicker">Welcome text</div>
+        <div class="panel-title">Your name</div>
+        <input class="name-input" id="name-input" type="text" maxlength="40" autocomplete="off" spellcheck="false">
+        <div class="overlay-sub">Type with the on-screen keyboard. OK saves, BACK cancels.</div>
+      </div>
+    </div>
+
+    <!-- Add apps -->
+    <aside class="panel picker" id="picker">
+      <div class="panel-kicker">Home screen</div>
+      <div class="panel-title">Add apps</div>
+      <div class="overlay-sub">OK to add or remove. New apps you install appear here automatically.</div>
+      <div class="scroller"><div class="picker-grid" id="picker-grid"></div></div>
+    </aside>
+
+    <!-- Inputs -->
+    <div class="overlay sheet" id="inputs-sheet">
+      <div class="sheet-card">
+        <div class="panel-kicker">Switch to</div>
+        <div class="panel-title">Inputs</div>
+        <div class="sheet-list" id="inputs-list"></div>
+      </div>
+    </div>
+
+    <div class="toast" id="toast"></div>
+
+    <div class="saver" id="saver">
+      <div class="saver-layer" id="saver-layer"></div>
+      <div class="saver-shade"></div>
+      <div class="saver-info">
+        <div class="saver-time"><span id="saver-time"></span><span class="saver-ampm" id="saver-ampm"></span></div>
+        <div class="saver-date" id="saver-date"></div>
+        <div class="saver-weather" id="saver-weather"></div>
+      </div>
+      <div class="saver-caption" id="saver-caption"></div>
+    </div>
+  </div>
+
+  <script src="js/config.js"></script>
+  <script src="js/logos.js"></script>
+  <script src="js/luna.js"></script>
+  <script src="js/weather.js"></script>
+  <script src="js/ambient.js"></script>
+  <script src="js/backgrounds.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

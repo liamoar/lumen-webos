@@ -1,0 +1,6 @@
+{
+  "name": "com.avinash.lumen.service",
+  "version": "1.0.0",
+  "description": "Lumen background service: keeps Lumen as the home screen",
+  "main": "service.js"
+}

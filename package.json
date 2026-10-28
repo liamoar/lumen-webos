@@ -1,0 +1,23 @@
+{
+  "name": "lumen-webos",
+  "version": "1.0.0",
+  "scripts": {
+    "preview": "start \"\" appindex.html",
+    "build": "node tools/tv.mjs build",
+    "deploy": "node tools/tv.mjs deploy",
+    "launch": "node tools/tv.mjs launch",
+    "uninstall": "node tools/tv.mjs uninstall",
+    "inspect": "node tools/tv.mjs inspect",
+    "tv:status": "node tools/tv.mjs status",
+    "renew": "node tools/renew-devmode.mjs",
+    "renew:schedule": "powershell -ExecutionPolicy Bypass -File tools/schedule-renew.ps1",
+    "renew:unschedule": "powershell -ExecutionPolicy Bypass -File tools/schedule-renew.ps1 -Remove",
+    "tv:selftest": "node tools/selftest.mjs",
+    "tv:eval": "node tools/tveval.mjs"
+  },
+  "description": "Clean, Apple TV-inspired launcher for LG webOS TVs (developer-mode app)",
+  "devDependencies": {
+    "@webos-tools/cli": "^3.2.6"
+  },
+  "private": true
+}
